@@ -15,7 +15,7 @@
     "autoload": {
         "psr-4": {
             "Brezgalov\\IPoint\\": "src/",
-            "Brezgalov\\IPoint\\Traits": "src/traits"
+            "Brezgalov\\IPoint\\Traits\\": "src/traits"
         }
     }
 }
