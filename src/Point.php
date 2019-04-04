@@ -21,4 +21,17 @@ class Point implements IPoint
      * @var float
      */
     public $lon;
+
+    /**
+     * Point constructor.
+     * @param array $config
+     */
+    public function __construct(array $config = [])
+    {
+        foreach (['lat', 'lon'] as $key) {
+            if (array_key_exists($key, $config)) {
+                $this->{$key} = $config[$key];
+            }
+        }
+    }
 }
